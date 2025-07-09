@@ -17,7 +17,7 @@ Creates the core networking stack:
 - Route tables and associations
 
 ## 📁 Folder Structure
-
+```
 terraform/
 ├── terraform-bootstrap/
 │ ├── main.tf
@@ -30,27 +30,31 @@ terraform/
 │ ├── variables.tf
 │ └── output.tf
 └── .gitignore
-
+```
 ## ⚙️ How to Use
 
-### 🔹 Step 1: Clone the repo
-```bash
-git clone https://github.com/YOUR_USERNAME/terraform-aws-vpc.git
+**Step 1: Clone the repo**
+```
+git clone <Repo url>
 cd terraform/terraform-bootstrap
+```
 
-### 🔹 Step 2: Bootstrap the backend
+**Step 2: Bootstrap the backend**
+
 ```
 terraform init
 terraform apply
 ````
-## 🔹 Step 3: Deploy the VPC
+**Step 3: Deploy the VPC**
 ```
 cd ../terraform-vpc
 terraform init
 terraform apply
 ```
-⏳ Work in Progress
-🛠️ Features to be added:
+⏳**Work in Progress**
+
+
+**Features to be added:**
 
 Bastion (Jump Host) EC2 in public subnet
 
@@ -58,13 +62,16 @@ Private EC2 instance with no public IP
 
 SSH access to private EC2 only via Bastion
 
-🔐 Security Best Practices
+**Security Best Practices**
+
 .tfstate, .tfvars, and sensitive files are .gitignore-ed
 
 AWS credentials should not be stored in Terraform code
 
 Use environment variables or a credentials file for auth
 
-👨‍💻 Author
+👨‍💻 **Author**
+
 Nilesh Kundu
+
 Beginner Terraform + DevOps practitioner, building infrastructure from scratch and learning deeply along the way.
